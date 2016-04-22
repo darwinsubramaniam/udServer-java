@@ -28,33 +28,37 @@ public class udReseachBrain {
     //Initialising Server --> havent start running 
     public static void main(String[] args) {
 
-        boolean distributor_available;  //Indicate if the data from can be parcel 
-        String data;                    //Current Data from the Client is saved.
-        String idNummer = "";
-        int speedInt = 0;
-        int steeringInt = 0;
-        double speedDouble = 0.0;
-        double steeringDouble = 0.0;
-        String command = "";
-        long recieveTime;
+//        boolean distributor_available;  //Indicate if the data from can be parcel 
+//        String data;                    //Current Data from the Client is saved.
+//        String idNummer = "";
+//        int speedInt = 0;
+//        int steeringInt = 0;
+//        double speedDouble = 0.0;
+//        double steeringDouble = 0.0;
+//        String command = "";
+//        long recieveTime;
+//        
+//        UdServer server = new UdServer(8080);
+//        DataAnalyse dataAnalyse = new DataAnalyse(":", "=", 0, 1, 2, 3,
+//                true, 4);
+//        if (server.isConnected()) {
+//             data = server.readClient();
+//             dataAnalyse.setData(data);
+//             recieveTime = System.currentTimeMillis();
+//             idNummer = dataAnalyse.getID();
+//             command = dataAnalyse.getCommand();
+//             if(command.equals("MC")){
+//               
+//                 
+//             }else if ( command.equals("CM")){
+//                 speedDouble = dataAnalyse.getSpeedDouble();
+//                 steeringDouble = dataAnalyse.getSteeringDouble();
+//             }
+//             
+//        }      
+
+        DataSaving test = new DataSaving("test");
         
-        UdServer server = new UdServer(8080);
-        DataAnalyse dataAnalyse = new DataAnalyse(":", "=", 0, 1, 2, 3, true, 4);
-        if (server.isConnected()) {
-             data = server.readClient();
-             dataAnalyse.setData(data);
-             recieveTime = System.currentTimeMillis();
-             idNummer = dataAnalyse.getID();
-             command = dataAnalyse.getCommand();
-             if(command.equals("MC")){
-               
-                 
-             }else if ( command.equals("CM")){
-                 speedDouble = dataAnalyse.getSpeedDouble();
-                 steeringDouble = dataAnalyse.getSteeringDouble();
-             }
-             
-        }       
 
     }
 

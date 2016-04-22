@@ -15,11 +15,13 @@
  */
 package com.udsoft.com.universaldriveserver;
 
+import java.io.Serializable;
+
 /**
  *
  * @author darwin
  */
-public class DataBank implements Runnable {
+public class DataBank implements Serializable {
     private String ID;
     private String ClientTime;
     private String ArduinoTime;
@@ -49,9 +51,5 @@ public class DataBank implements Runnable {
         this.ArduinoTime = ArduinoTime;
     }
 
-    @Override
-    public void run()
-    {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+
 }

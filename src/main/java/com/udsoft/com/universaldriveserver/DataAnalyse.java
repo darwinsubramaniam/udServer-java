@@ -188,28 +188,11 @@ public class DataAnalyse implements Runnable{
         double steering = Double.parseDouble(temp);
         return steering;
     }
-
-//    public void csv(String A_ID) throws IOException {
-//        ColumnPositionMappingStrategy strat = new ColumnPositionMappingStrategy();
-//        strat.setType(DataBank.class);
-//        String[] columns = new String[]{"ID", "Client Zeit", "Arduino Zeit", }; // The Field to Bind with Java Bean
-//        strat.setColumnMapping(columns);
-//
-//        CsvToBean csv = new CsvToBean();
-//        String csvFilename = "DataBank.csv";
-//        CSVReader csvReader = new CSVReader(new FileReader(csvFilename));
-//
-//        List list = csv.parse(strat , csvReader);
-//        for (Object object : list){
-//            ID id1 = (ID) object;
-//
-//        }
-//
-//
-//
-//
-//
-//    }
+    
+    public void inAction(){
+        // take the setData and properlly set all the things in order 
+        // making the automation of Data split as easy as possible
+    }
 
     @Override
     public void run()
